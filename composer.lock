@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0733b31fd4446d168d6c1efc76f0c295",
+    "hash": "34e58e8439e930c4568fffe974382a26",
+    "content-hash": "159a85296e402558d185d3f829e3579f",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -260,6 +261,57 @@
                 "magento"
             ],
             "time": "2015-03-05 21:40:30"
+        },
+        {
+            "name": "magento/module-sample-data",
+            "version": "1.0.0-beta",
+            "dist": {
+                "type": "zip",
+                "url": "https://packages.magento.com/_packages/magento_module-sample-data-1.0.0-beta.zip",
+                "reference": null,
+                "shasum": "d807c96706e75323b466c02b4cb0c2b3a0711768"
+            },
+            "require": {
+                "magento/framework": "~1.0.0-beta",
+                "magento/magento-composer-installer": "*"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "map": [
+                    [
+                        "*",
+                        "Magento/SampleData"
+                    ]
+                ]
+            },
+            "description": "Sample Data fixtures"
+        },
+        {
+            "name": "magento/sample-data",
+            "version": "1.0.0-beta",
+            "dist": {
+                "type": "zip",
+                "url": "https://packages.magento.com/_packages/magento_sample-data-1.0.0-beta.zip",
+                "reference": null,
+                "shasum": "3ebd97cb095dc7f0820656c617fb17829ee66871"
+            },
+            "require": {
+                "magento/module-sample-data": "self.version",
+                "magento/sample-data-media": "~0.42.0-beta2"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "magento/sample-data-media",
+            "version": "0.42.0-beta2",
+            "dist": {
+                "type": "zip",
+                "url": "https://packages.magento.com/_packages/magento_sample-data-media-0.42.0-beta2.zip",
+                "reference": null,
+                "shasum": "5c53f11742eac4b414a8a65763e459d3673f4219"
+            },
+            "type": "library",
+            "description": "Sample Data media files"
         },
         {
             "name": "magento/zendframework1",
@@ -585,12 +637,12 @@
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console.git",
+                "url": "https://github.com/symfony/console.git",
                 "reference": "b5ec0c11a204718f2b656357f5505a8e578f30dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/b5ec0c11a204718f2b656357f5505a8e578f30dd",
+                "url": "https://api.github.com/repos/symfony/console/zipball/b5ec0c11a204718f2b656357f5505a8e578f30dd",
                 "reference": "b5ec0c11a204718f2b656357f5505a8e578f30dd",
                 "shasum": ""
             },
@@ -3266,12 +3318,12 @@
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Config.git",
+                "url": "https://github.com/symfony/config.git",
                 "reference": "58ded81f1f582a87c528ef3dae9a859f78b5f374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/58ded81f1f582a87c528ef3dae9a859f78b5f374",
+                "url": "https://api.github.com/repos/symfony/config/zipball/58ded81f1f582a87c528ef3dae9a859f78b5f374",
                 "reference": "58ded81f1f582a87c528ef3dae9a859f78b5f374",
                 "shasum": ""
             },
@@ -3316,12 +3368,12 @@
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/DependencyInjection.git",
+                "url": "https://github.com/symfony/dependency-injection.git",
                 "reference": "1a409e52a38ec891de0a7a61a191d1c62080b69d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/1a409e52a38ec891de0a7a61a191d1c62080b69d",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/1a409e52a38ec891de0a7a61a191d1c62080b69d",
                 "reference": "1a409e52a38ec891de0a7a61a191d1c62080b69d",
                 "shasum": ""
             },
@@ -3376,12 +3428,12 @@
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
                 "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
                 "reference": "be3c5ff8d503c46768aeb78ce6333051aa6f26d9",
                 "shasum": ""
             },
@@ -3434,12 +3486,12 @@
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
+                "url": "https://github.com/symfony/filesystem.git",
                 "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a0d43eb3e17d4f4c6990289805a488a0482a07f3",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/a0d43eb3e17d4f4c6990289805a488a0482a07f3",
                 "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3",
                 "shasum": ""
             },
